@@ -1,0 +1,21 @@
+ALGORITHM ph
+VAR
+    c:= caracter
+    nb-mo:=0
+    nb-espace:=0
+    nb-v:=0
+    nb-c:=0
+BEGIN
+    do 
+    write("donne un caracter")
+    read(c)
+    nb-c:=nb-c + 1 
+    if(c=="e") or (c=="a") or (c=="i") or (c=="u") or (c=="y") or (c=="o")
+        nb-v:= nb-v + 1 
+    else if(c==" ")
+    nb-espace:=nb-espace + 1 
+    nb-mo:=nb-espace + 1
+    while(c<>".")
+    write(nb-c,nb-v,nb-mo)
+
+END
